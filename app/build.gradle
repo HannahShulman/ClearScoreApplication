@@ -23,9 +23,7 @@ android {
     }
     buildTypes {
         debug {
-            debug {
-                buildConfigField "String", "SERVER_URL", '"https://android-interview.s3.eu-west-2.amazonaws.com/"'
-            }
+            buildConfigField "String", "SERVER_URL", '"https://android-interview.s3.eu-west-2.amazonaws.com/"'
         }
         release {
             minifyEnabled false
@@ -88,10 +86,6 @@ dependencies {
 
     //UI
     implementation 'com.github.jakob-grabner:Circle-Progress-View:1.4'
-
-
-//    testImplementation 'junit:junit:4.+'
-
 
 
     //test
