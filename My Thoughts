@@ -1,0 +1,21 @@
+I just wanted to ellaborate a little on my work.
+
+Architecture: I have chosen to use the architecture recommended by android, which is MVVM.
+
+Seperation of Concerns. I am aware that in the real world, I would have some additional seperations, such as view states 
+  - having it all handled in a separate class, to achieve reusibility, consistancy, and better and clearer testing.
+  
+Testing - Testing UI with androidTest, which gets the tests running on the emulator, takes much more time, 
+  hence, all my tests are written as unit tests, using the Rebolectric framework 
+  (I am aware of the fact that Rebolectric can run with JUnit 5, but does a really good job with JUnit4)
+  
+DI - I have used dagger, its the longest in the market, that been supported by android. If Id have more time, Id probably go with the new recommendation, 
+  Hilt. which is a wrapper to dagger.
+  
+Third party libraries.
+-For the Donut/Progressbar, I have used a library that has 1.2 starts, and I have experience with it. 
+ I always try to see if there is something really good around, instead of building one too. 
+ I would utilize my time for creating stuff that isnt around.
+-For testing I have added Truth (which helps with readability) and Barista, which helps with view visibility and interactions.
+
+
