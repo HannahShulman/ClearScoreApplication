@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ClearScoreApplicationTest</string>
+    <string name="display_maximum_credits">out of %d</string>
+    <string name="your_score_is">Your score is:</string>
+    <string name="loading_placeholder">Loading…</string>
+    <string name="default_load_credits_failure_message">Could not fetch current credits</string>
+</resources>

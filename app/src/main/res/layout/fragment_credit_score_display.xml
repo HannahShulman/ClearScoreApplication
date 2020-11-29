@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <at.grabner.circleprogress.CircleProgressView
+            android:id="@+id/progress_circular"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="24dp"
+            android:background="@android:color/transparent"
+            app:cpv_barColor="@android:color/transparent"
+            app:cpv_barColor1="@color/purple_200"
+            app:cpv_barColor2="@color/purple_500"
+            app:cpv_barColor3="@color/purple_700"
+            app:cpv_barStrokeCap="Round"
+            app:cpv_barWidth="8dp"
+            app:cpv_fillColor="@android:color/transparent"
+            app:cpv_innerContourColor="@android:color/transparent"
+            app:cpv_outerContourColor="@android:color/transparent"
+            app:cpv_rimColor="@android:color/transparent"
+            app:cpv_textMode="Text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="H, 1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/score_data"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="56dp"
+            android:background="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@id/progress_circular"
+            app:layout_constraintDimensionRatio="H, 1:1"
+            app:layout_constraintEnd_toEndOf="@id/progress_circular"
+            app:layout_constraintStart_toStartOf="@id/progress_circular"
+            app:layout_constraintTop_toTopOf="@id/progress_circular">
+
+            <TextView
+                android:id="@+id/credit_score_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/your_score_is"
+                app:layout_constraintBottom_toTopOf="@id/score_tv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/score_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="48sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="327" />
+
+            <TextView
+                android:id="@+id/credit_score_out_of_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/score_tv"
+                tools:text="Out of 700" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
